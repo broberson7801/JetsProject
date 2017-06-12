@@ -12,6 +12,12 @@ public class PilotBarracks {
 		pilots[1] = new Pilot("The \"Tweak\"", 25, 3);
 		pilots[2] = new Pilot("Coke Sniffer", 30, 0);
 		pilots[3] = new Pilot("Robo Tripper (not old enough to drink)", 18, 0);
+		
+		/*
+		 * In the commented code below, I attempted to add a snarky comment to be printed
+		 * for when the ICBM was showed, the pilot wouldn't exist. I could not get it to
+		 * work and ran out of time attempting to get the code below implemented.
+		 */
 
 //		for (int i = 0; i > JetsHangar.getHangar().length; i++) {
 //			if (JetsHangar.getHangar().equals("The Minute Man")) {

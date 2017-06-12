@@ -12,7 +12,12 @@ a number larger than a double into the "range" field when adding a jet);
 
 The program will save the array, show any updated information for when a pilot is added, or when a jet is added, so long as the program does not crash (see above), or so long as a "QUIT" option is not chosen on any of the menu items. 
 
-For some reason, I decided to have an ICBM in the hangar, and I attempted to to write a for loop stating that there isn't a pilot for the missile (It didn't work), so there are less pilots then jets in the hangar. 
 
-The biggest challenge on the project was getting an initialized jet array out of the method (ultimately set the array to a field), and after i got the array out, everything else was simple, minus a few hiccups here and there.
+As for the stretch goals, I did not randomize the pilots, otherwise, you can add a pilot, though no option is included in the program to list them separately apart from the jets.
+
+ISSUES IN WRITING THE PROGRAM:
+
+For some reason, I decided to have an ICBM in the hangar, and I attempted to to write a for loop stating that there isn't a pilot for the missile (It didn't work), so there are less pilots then jets in the hangar.
+
+The biggest challenge on the project was getting an initialized jet array out of the method (ultimately set the array to a field -took a day plus help from Aaron), and after i got the array out, everything else was simple, minus a few hiccups here and there. 
 
