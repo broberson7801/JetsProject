@@ -87,7 +87,7 @@ public class PilotBarracks {
 		for (int i = 0; i < JetsHangar.getHangar().length; i++) {
 			if (pilots[i] != null && JetsHangar.getHangar()[i] != null) {
 				System.out.println(pilots[i] + "\n" + JetsHangar.getHangar()[i] + "\n");
-			} else if (pilots[i] == null) {
+			} else if (pilots[i] == null && (JetsHangar.getHangar()[i] != null)) {
 				System.out.println("There is no pilot" + "\n" + JetsHangar.getHangar()[i]);
 			}
 		}
