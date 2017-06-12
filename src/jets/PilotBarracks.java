@@ -12,18 +12,20 @@ public class PilotBarracks {
 		pilots[1] = new Pilot("The \"Tweak\"", 25, 3);
 		pilots[2] = new Pilot("Coke Sniffer", 30, 0);
 		pilots[3] = new Pilot("Robo Tripper (not old enough to drink)", 18, 0);
-		
+
 		/*
-		 * In the commented code below, I attempted to add a snarky comment to be printed
-		 * for when the ICBM was showed, the pilot wouldn't exist. I could not get it to
-		 * work and ran out of time attempting to get the code below implemented.
+		 * In the commented code below, I attempted to add a snarky comment to
+		 * be printed for when the ICBM was showed, the pilot wouldn't exist. I
+		 * could not get it to work and ran out of time attempting to get the
+		 * code below implemented.
 		 */
 
-//		for (int i = 0; i > JetsHangar.getHangar().length; i++) {
-//			if (JetsHangar.getHangar().equals("The Minute Man")) {
-//				System.out.println("The ICBM does not have a pilot for obvious reasons.");
-//			}
-//		}
+		// for (int i = 0; i > JetsHangar.getHangar().length; i++) {
+		// if (JetsHangar.getHangar().equals("The Minute Man")) {
+		// System.out.println("The ICBM does not have a pilot for obvious
+		// reasons.");
+		// }
+		// }
 
 	}
 
@@ -37,6 +39,8 @@ public class PilotBarracks {
 		for (Pilot pilot : pilots) {
 			if (pilot != null) {
 				System.out.println(pilot);
+			} else {
+				System.out.println("No Pilot for the jet.");
 			}
 		}
 
@@ -81,10 +85,13 @@ public class PilotBarracks {
 
 	public void printBothPilotsAndJets() {
 		for (int i = 0; i < JetsHangar.getHangar().length; i++) {
-				if (pilots[i] != null && JetsHangar.getHangar()[i] != null) {
-					System.out.println(pilots[i] + "\n" + JetsHangar.getHangar()[i] +
-							"\n");
+			if (pilots[i] != null && JetsHangar.getHangar()[i] != null) {
+				System.out.println(pilots[i] + "\n" + JetsHangar.getHangar()[i] + "\n");
+			} else if (pilots[i] == null) {
+				System.out.println("There is no pilot" + "\n" + JetsHangar.getHangar()[i]);
 			}
 		}
+		System.out.println("Press Any Key to return to Main Menu");
+		MainMenu.mainMenu();
 	}
 }

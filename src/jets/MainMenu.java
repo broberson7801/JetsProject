@@ -31,7 +31,7 @@ public class MainMenu {
 			switch (choice) {
 			case '1':
 				pilot.printBothPilotsAndJets();
-				pilot.printPilots();
+				//pilot.printPilots();
 				keepGoing = false;
 				break;
 			case '2':
